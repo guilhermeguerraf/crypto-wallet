@@ -1,8 +1,13 @@
 <h1>Seja bem-vindo a CriptoWallet</h1>
 <p>Sua carteira digital de criptomoedas. Centralize as suas moedas favoritas em um só lugar!</p>
-<p>Data: <%= convert_date_to_brazilian_format(Date.today) %></p>
-<p>Ambiente atual: <%= environment_br %></p>
 
+<br/>
+<p>Data de hoje: <strong><%= convert_date_to_brazilian_format(Date.today) %></strong></p>
+<p>Ambiente atual: <strong><%= environment_br %></strong></p>
+<p>Curso: <strong><%= @course %></strong></p>
+<br/>
+
+<h3>Barra de navegação:</h3>
 <nav>
     <ul>
         <li>

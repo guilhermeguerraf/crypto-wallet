@@ -1,4 +1,7 @@
 class CoinsController < ApplicationController
+  # views/layouts/adm.erb.html
+  layout "adm" # Layout padrão para as paginas de moedas
+
   before_action :set_coin, only: %i[ show edit update destroy ]
 
   # GET /coins or /coins.json
