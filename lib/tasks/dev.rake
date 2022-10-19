@@ -1,3 +1,5 @@
+require 'pastel'
+
 namespace :dev do
   desc "Rebuilds the database with the values recorded in seeds.rb"
   task db_reset: :environment do
@@ -12,9 +14,11 @@ namespace :dev do
 
   private
     def show_spinner(start_message_log, end_message_log = "Concluído com sucesso!")
-      spinner = TTY::Spinner.new("[:spinner] #{start_message_log}", format: :dots_2)
+      pastel = Pastel.new
+
+      spinner = TTY::Spinner.new("[:spinner] #{pastel.bright_yellow(start_message_log)}", format: :dots_2, success_mark: pastel.bright_green("+"))
       spinner.auto_spin
       yield
-      spinner.success("(#{end_message_log})")
+      spinner.success(pastel.bright_green("(#{end_message_log})"))
     end
 end
