@@ -76,7 +76,7 @@ namespace :dev do
         acronym: "PoW"
       },
       {
-        description: "Proof of State",
+        description: "Proof of Stake",
         acronym: "PoS"
       },
       {

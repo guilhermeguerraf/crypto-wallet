@@ -15,5 +15,10 @@
   <%= @coin.image_url %>
 </p>
 
+<p>
+  <strong>Mining Type:</strong>
+  <%= "#{@coin.mining_type.description} (#{@coin.mining_type.acronym})" %>
+</p>
+
 <%= link_to 'Edit', edit_coin_path(@coin) %> |
 <%= link_to 'Back', coins_path %>
