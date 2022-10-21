@@ -9,9 +9,9 @@ namespace :dev do
     
     show_spinner("Migrando BD ...") { %x(rails db:migrate) }
 
-    %x(rails dev:add_coins)
-
     %x(rails dev:add_mining_types)
+    
+    %x(rails dev:add_coins)
   end
 
   desc "Populate coins table"
@@ -20,37 +20,44 @@ namespace :dev do
       {
         description: "Bitcoin",
         acronym: "BTC",
-        image_url: "https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+        image_url: "https://cryptologos.cc/logos/bitcoin-btc-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Ethereum",
         acronym: "ETH",
-        image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png"
+        image_url: "https://cryptologos.cc/logos/ethereum-eth-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Dash",
         acronym: "DASH",
-        image_url: "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/dash_dashcoin-512.png"
+        image_url: "https://cryptologos.cc/logos/dash-dash-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Litecoin",
         acronym: "LTC",
-        image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LTC-400.png/2048px-LTC-400.png"
+        image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LTC-400.png/2048px-LTC-400.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Binance Coin",
         acronym: "BNB",
-        image_url: "https://seeklogo.com/images/B/bnb-logo-AC3FE1FF33-seeklogo.com.png"
+        image_url: "https://seeklogo.com/images/B/bnb-logo-AC3FE1FF33-seeklogo.com.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Iota",
-        acronym: "IOTA",
-        image_url: "https://w7.pngwing.com/pngs/296/274/png-transparent-iota-cryptocurrency-logo-internet-of-things-tether-bitcoin-logo-monochrome-black.png"
+        acronym: "IOT",
+        image_url: "https://cryptologos.cc/logos/iota-miota-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "ZCash",
         acronym: "ZEC",
-        image_url: "https://cryptologos.cc/logos/zcash-zec-logo.png"
+        image_url: "https://cryptologos.cc/logos/zcash-zec-logo.png",
+        mining_type: MiningType.all.sample
       }
     ]
 
