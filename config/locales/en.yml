@@ -30,4 +30,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  language: "English"
+  hello: "Hello world!"
+  links:
+    back: "Back"
+    new: "New"
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"

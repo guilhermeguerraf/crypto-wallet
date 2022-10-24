@@ -3,10 +3,10 @@
   <nav>
     <ul>
       <li>
-        <%= link_to "Moedas", coins_path %>
+        <%= link_to Coin.model_name.human(count: 2), coins_path %>
       </li>
       <li>
-        <%= link_to "Tipos de mineração", mining_types_path %>
+        <%= link_to MiningType.model_name.human(count: 2), mining_types_path %>
       </li>
     </ul>
   </nav>

@@ -1,0 +1,9 @@
+pt-BR:
+  language: "Português do Brasil"
+  hello: "Olá mundo!"
+  links:
+    back: "Voltar"
+    new: "Novo"
+    show: "Mostrar"
+    edit: "Editar"
+    destroy: "Apagar"
