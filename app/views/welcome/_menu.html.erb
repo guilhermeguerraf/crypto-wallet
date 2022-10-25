@@ -1,13 +1,4 @@
 <div>
-  <h3>Barra de navegação:</h3>
-  <nav>
-    <ul>
-      <li>
-        <%= link_to Coin.model_name.human(count: 2), coins_path %>
-      </li>
-      <li>
-        <%= link_to MiningType.model_name.human(count: 2), mining_types_path %>
-      </li>
-    </ul>
-  </nav>
+  <%= link_to Coin.model_name.human(count: 2), coins_path, class: "btn btn-primary btn-lg", role: "button" %>
+  <%= link_to MiningType.model_name.human(count: 2), mining_types_path, class: "btn btn-primary btn-lg", role: "button" %>
 </div>

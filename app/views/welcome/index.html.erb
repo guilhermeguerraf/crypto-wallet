@@ -1,17 +1,9 @@
-<%= link_to 'Português do Brasil', root_path(locale: 'pt-BR') %>
-<%= link_to 'English', root_path(locale: 'en') %>
-<br>
-
-<p>👋 <%= t('hello')%></p>
-
-<h1>Bem-vindo a CriptoWallet!</h1>
-<p>Sua carteira digital de criptomoedas. Centralize as suas moedas favoritas em um só lugar!</p>
-
-<br/>
-<p>Idioma: <strong><%= t('language') %></strong></p>
-<p>Data de hoje: <strong><%= l(Date.today, format: :short) %></strong></p>
-<p>Ambiente atual: <strong><%= environment_to_ptBR(Rails.env) %></strong></p>
-<p>Curso: <strong><%= coursing_now(@course) %></strong></p>
-<br/>
-
-<%= render "menu" %>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bem-vindo a CriptoWallet!</h1>
+    <p class="lead">Sua carteira digital de criptomoedas. Adicione as suas moedas favoritas em um só lugar!</p>
+    <hr class="my-4">
+    <p>Entre em uma das opções abaixo e comece a cadastrar.</p>
+    <%= render "menu" %>
+  </div>
+</div>
