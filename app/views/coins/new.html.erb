@@ -1,5 +1,5 @@
-<h1>New Coin</h1>
+<div class="container">
+  <h1><%= t('page_title.new_coin') %></h1>
 
-<%= render 'form', coin: @coin %>
-
-<%= link_to t('links.back'), coins_path %>
+  <%= render 'form', coin: @coin %>
+</div>

@@ -1,9 +1,22 @@
 pt-BR:
   language: "Português do Brasil"
   hello: "Olá mundo!"
+  hero:
+    welcome: "Bem-vindo a CryptoWallet!"
+    description: "Adicione e acompanhe as suas criptomoedas favoritas em um só lugar!"
+  menu:
+    message: "Para começar, escolhe uma das opções abaixo:"
+  page_title:
+    new_coin: "Adicionar moeda"
+    editing_coin: "Editando moeda"
+    new_mining_type: "Novo tipo de mineração"
+    editing_mining_type: "Editando tipo de mineração"
   links:
     back: "Voltar"
-    new: "Novo"
+    new: "Adicionar"
     show: "Mostrar"
     edit: "Editar"
     destroy: "Apagar"
+  messages:
+    confirm: "Tem certeza?"
+    select: "Selecione..."

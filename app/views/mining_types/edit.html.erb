@@ -1,6 +1,5 @@
-<h1>Editing Mining Type</h1>
+<div class="container">
+  <h1><%= t('page_title.editing_mining_type') %></h1>
 
-<%= render 'form', mining_type: @mining_type %>
-
-<%= link_to t('links.show'), @mining_type %> |
-<%= link_to t('links.back'), mining_types_path %>
+  <%= render 'form', mining_type: @mining_type %>
+</div>

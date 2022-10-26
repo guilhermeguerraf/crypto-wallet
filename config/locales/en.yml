@@ -32,9 +32,22 @@
 en:
   language: "English"
   hello: "Hello world!"
+  hero:
+    welcome: "Welcome to CryptoWallet!"
+    description: "This is the CryptoWallet, an app that you can register and keep up your cryptocoins."
+  menu:
+    message: "To start, choose an option below:"
+  page_title:
+    new_coin: "New coin"
+    editing_coin: "Editing coin"
+    new_mining_type: "New mining type"
+    editing_mining_type: "Editing mining type"
   links:
     back: "Back"
     new: "New"
     show: "Show"
     edit: "Edit"
     destroy: "Destroy"
+  messages:
+    confirm: "Are you sure?"
+    select: "Select..."

@@ -11,17 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class: "form-control", placeholder: "Nome da cruptomoeda" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
+    <%= form.text_field :acronym, class: "form-control", placeholder: "Nome da cruptomoeda" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit nil, class: "btn btn-primary" %>
+  <%= link_to t('links.back'), mining_types_path, class: "btn btn-light" %>
 <% end %>

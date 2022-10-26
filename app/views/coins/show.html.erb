@@ -1,24 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong><%= Coin.human_attribute_name(:description) %>:</strong>
-  <%= @coin.description %>
-</p>
+  <form>
+    <fieldset disabled>
+      <div class="form-group">
+        <%= label_tag @coin.class.human_attribute_name(:description) %>
+        <%= text_field_tag nil, @coin.description, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= label_tag @coin.class.human_attribute_name(:acronym) %>
+        <%= text_field_tag nil, @coin.acronym, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= label_tag @coin.class.human_attribute_name(:image_url) %>
+        <%= text_field_tag nil, @coin.image_url, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= label_tag @coin.class.human_attribute_name(:mining_type) %>
+        <%= text_field_tag nil, @coin.mining_type.description, class: "form-control" %>
+      </div>
+    </fieldset>
+  </form>
 
-<p>
-  <strong><%= Coin.human_attribute_name(:acronym) %>:</strong>
-  <%= @coin.acronym %>
-</p>
-
-<p>
-  <strong><%= Coin.human_attribute_name(:image_url) %>:</strong>
-  <%= @coin.image_url %>
-</p>
-
-<p>
-  <strong><%= Coin.human_attribute_name(:mining_type) %>:</strong>
-  <%= "#{@coin.mining_type.description} (#{@coin.mining_type.acronym})" %>
-</p>
-
-<%= link_to t('links.edit'), edit_coin_path(@coin) %> |
-<%= link_to t('links.back'), coins_path %>
+  <%= link_to t('links.edit'), edit_coin_path(@coin), class: "btn btn-primary" %> |
+  <%= link_to t('links.back'), coins_path, class: "btn btn-light" %>
+</div>
